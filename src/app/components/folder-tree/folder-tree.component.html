@@ -1,0 +1,45 @@
+<div class="loading-indicator" *ngIf="!dataLoaded">
+  <dx-load-indicator [height]="40" [width]="40"> </dx-load-indicator>
+  Loading files and folders, please wait...
+</div>
+
+<dx-tree-view
+  *ngIf="dataLoaded"
+  [dataSource]="folders"
+  id="treeView"
+  dataStructure="plain"
+  keyExpr="id"
+  displayExpr="name"
+  parentIdExpr="parentId"
+  [searchEnabled]="true"
+  searchMode="startswith"
+  selectionMode="single"
+  itemTemplate="list-item"
+  [selectByClick]="true"
+>
+  <div *dxTemplate="let data of 'list-item'; let index = index">
+    <app-file-action-menu [info]="data"></app-file-action-menu>
+    <div (click)="selectItem(data)" class="item-label">
+      <i *ngIf="data.icon === 'folder'" class="icon dx-icon-folder"></i>
+      <i *ngIf="data.icon === 'copy'" class="icon dx-icon-copy"></i>
+      {{ data.name }}
+    </div>
+  </div>
+</dx-tree-view>
+
+<dx-popup
+  [(visible)]="showFilePopup"
+  [closeOnOutsideClick]="true"
+  contentTemplate="popup-content"
+  [dragEnabled]="false"
+  title="Selected File Information"
+  [height]="200"
+  [width]="500"
+>
+  <div *dxTemplate="let data of 'popup-content'">
+    <div class="file-info">
+      <i class="file-icon icon dx-icon-copy"></i>
+      <h4>{{ currentItem.name }}</h4>
+    </div>
+  </div>
+</dx-popup>

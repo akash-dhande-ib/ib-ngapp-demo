@@ -1,0 +1,46 @@
+html,
+body {
+    font-family: "Helvetica Neue", "Segoe UI", helvetica, verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.empty-file-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    padding: 40px;
+    margin: 0 8px 40px 8px;
+    color: #6d6d6d;
+    text-align: center;
+    .icon {
+        font-size: 50px;
+    }
+}
+
+// DX Overwrite
+.dx-popup-wrapper > .dx-overlay-content {
+    min-width: 120px;
+}
+
+.dx-popup-title.dx-toolbar .dx-toolbar-label {
+    max-width: 250px !important;
+}
+
+.dx-dropdownbutton {
+    border: 0 !important;
+    margin: 0 8px;
+}
+
+.dx-treeview-item {
+    padding: 0;
+}
+
+dx-drop-down-button {
+    .dx-button-has-icon .dx-button-content {
+        padding: 4px 2px !important;
+    }
+}

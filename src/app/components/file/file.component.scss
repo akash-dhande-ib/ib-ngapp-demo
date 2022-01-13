@@ -1,0 +1,27 @@
+.file-item {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 6px;
+    margin: 0 8px 8px 8px;
+    width: 180px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .icon {
+        font-size: 40px;
+        color: #747474;
+    }
+    h4 {
+        margin: 0;
+    }
+    app-file-action-menu {
+        position: absolute;
+        right: 0;
+        top: 4px;
+    }
+}

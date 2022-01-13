@@ -1,0 +1,11 @@
+<div class="empty-file-container" *ngIf="folders.length < 1">
+  <div>
+    <i class="icon dx-icon-folder"></i>
+    <i class="icon dx-icon-copy"></i>
+  </div>
+  No file/folder recoreded.
+</div>
+
+<div *ngIf="folders.length > 0" class="file-list">
+  <app-file *ngFor="let item of folders" [info]="item"></app-file>
+</div>

@@ -1,0 +1,37 @@
+.file-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    h4 {
+        font-size: 28px;
+        margin: 0;
+    }
+    .file-icon {
+        font-size: 60px;
+    }
+}
+
+.dx-treeview-item-content {
+    display: flex;
+    align-items: center;
+    .item-label {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 8px 4px;
+        .icon {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+    }
+}
+
+.loading-indicator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+}

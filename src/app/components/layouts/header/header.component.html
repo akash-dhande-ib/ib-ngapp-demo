@@ -1,0 +1,23 @@
+<header>
+  <dx-toolbar class="header-toolbar">
+    <dxi-item location="before">
+      <app-breadcrumb></app-breadcrumb>
+    </dxi-item>
+    <dxi-item location="after">
+      <dx-button
+        (onClick)="addFolder()"
+        type="success"
+        icon="folder"
+        text="Add Folder"
+      >
+      </dx-button>
+      <dx-button
+        (onClick)="addContentItem()"
+        type="default"
+        icon="product"
+        text="Add Content Item"
+      >
+      </dx-button>
+    </dxi-item>
+  </dx-toolbar>
+</header>

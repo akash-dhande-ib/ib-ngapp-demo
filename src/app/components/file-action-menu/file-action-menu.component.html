@@ -1,0 +1,33 @@
+<dx-drop-down-button
+  [useSelectMode]="false"
+  [showArrowIcon]="false"
+  [items]="actionItems"
+  displayExpr="name"
+  icon="overflow"
+  keyExpr="id"
+  (onItemClick)="dropdownAction($event)"
+>
+</dx-drop-down-button>
+
+<dx-popup
+  [(visible)]="showDeleteConfirmation"
+  [closeOnOutsideClick]="true"
+  contentTemplate="popup-content"
+  [dragEnabled]="false"
+  title="Confirm Delete Action"
+  [height]="200"
+  [width]="300"
+>
+  <div *dxTemplate="let data of 'popup-content'">
+    <p>
+      Are you sure want to delete
+      <strong>{{ info.name }}</strong>?
+    </p>
+    <div class="popup-footer">
+      <dx-button (onClick)="showDeleteConfirmation = false" text="Cancel">
+      </dx-button>
+      <dx-button (onClick)="deleteAction()" type="danger" text="Confirm Delete">
+      </dx-button>
+    </div>
+  </div>
+</dx-popup>

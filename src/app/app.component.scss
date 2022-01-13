@@ -1,0 +1,14 @@
+.content-block {
+    display: flex;
+    justify-content: space-between;
+    .leftpan {
+        width: 300px;
+        min-width: 300px;
+        border-right: 1px solid #ccc;
+        margin-right: 16px;
+        padding: 0 16px;
+    }
+    .rightpan {
+        flex-grow: 1;
+    }
+}

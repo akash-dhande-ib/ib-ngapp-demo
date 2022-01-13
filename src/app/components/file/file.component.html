@@ -1,0 +1,6 @@
+<div class="file-item">
+  <app-file-action-menu [info]="info"></app-file-action-menu>
+  <i *ngIf="info.icon === 'folder'" class="icon dx-icon-folder"></i>
+  <i *ngIf="info.icon === 'copy'" class="icon dx-icon-copy"></i>
+  <h4>{{ info.name }}</h4>
+</div>

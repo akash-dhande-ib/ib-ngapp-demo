@@ -1,0 +1,6 @@
+<ul class="breadcrumb">
+  <li><a routerLink="/">Home</a></li>
+  <li *ngFor="let link of links">
+    <a [routerLink]="[link.slug]">{{ link.name }}</a>
+  </li>
+</ul>

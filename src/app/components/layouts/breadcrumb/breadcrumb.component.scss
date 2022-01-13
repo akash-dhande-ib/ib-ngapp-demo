@@ -1,0 +1,23 @@
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    background: #dfdfdf;
+    padding: 8px;
+    margin: 0;
+    a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #337ab7;
+    }
+    li {
+        &:before {
+            content: "/";
+            margin-right: 16px;
+        }
+        &:first-child {
+            &:before {
+                content: none;
+            }
+        }
+    }
+}
