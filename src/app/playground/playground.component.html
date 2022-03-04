@@ -1,0 +1,10 @@
+<p>playground works!</p>
+
+<h1>Selected: {{ samples[selectedSampleIndex] }} - {{ samples.length }}</h1>
+<button [disabled]="disablePreviousButton" (click)="onPrev()">Prev</button>
+<button (click)="onAddNew()">F7</button>
+<button [disabled]="disableNextButton" (click)="onNext()">Next</button>
+{{selectedSampleIndex}} - {{samples.length}}
+<ul>
+  <li *ngFor="let sample of samples">{{ sample }}</li>
+</ul>

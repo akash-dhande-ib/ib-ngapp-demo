@@ -26,6 +26,7 @@ import { StoreModule } from '@ngrx/store';
 import { fileReducer } from './store/file.reducer';
 import { AddEditItemComponent } from './components/add-edit-item/add-edit-item.component';
 import { FileActionMenuComponent } from './components/file-action-menu/file-action-menu.component';
+import { PlaygroundComponent } from './playground/playground.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FileActionMenuComponent } from './components/file-action-menu/file-acti
     HeaderComponent,
     FileComponent,
     AddEditItemComponent,
-    FileActionMenuComponent
+    FileActionMenuComponent,
+    PlaygroundComponent
   ],
   imports: [
     BrowserModule,

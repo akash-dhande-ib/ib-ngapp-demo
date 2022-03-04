@@ -1,116 +1,29 @@
 [
-    {
-        "id": 1,
-        "name": "2021 Standard Materials",
-        "slug": "2021-standard-materials-1",
-        "expanded": true,
-        "icon": "folder"
-    },
-    {
+  {
+    "id": 1,
+    "name": "2021 Standard Materials",
+    "slug": "2021-standard-materials-1",
+    "expanded": true,
+    "icon": "folder",
+    "items": [
+      {
         "id": 2,
         "name": "Demo",
         "slug": "demo-2",
         "icon": "folder"
-    },
-    {
+      },
+      {
         "id": 3,
         "name": "Letters",
         "slug": "letters-3",
         "icon": "folder"
-    },
-    {
-        "id": 4,
-        "name": "Projects",
-        "slug": "projects-4",
-        "icon": "folder"
-    },
-    {
-        "id": 5,
-        "name": "Subject",
-        "slug": "subject-5",
-        "icon": "folder"
-    },
-    {
-        "id": 6,
-        "parentId": 1,
-        "name": "A Folder",
-        "slug": "a-folder-6",
-        "icon": "folder"
-    },
-    {
-        "id": 7,
-        "parentId": 1,
-        "name": "MA Materials",
-        "slug": "ma-materials-7",
-        "icon": "folder"
-    },
-    {
-        "id": 8,
-        "parentId": 6,
-        "name": "File 1",
-        "icon": "copy"
-    },
-    {
-        "id": 9,
-        "parentId": 7,
-        "name": "CRN",
-        "icon": "copy"
-    },
-    {
-        "id": 10,
-        "parentId": 7,
-        "name": "File A",
-        "icon": "copy"
-    },
-    {
-        "id": 11,
-        "parentId": 7,
-        "name": "File B",
-        "icon": "copy"
-    },
-    {
-        "id": 12,
-        "parentId": 7,
-        "name": "Test",
-        "icon": "copy"
-    },
-    {
-        "id": 13,
-        "parentId": 1,
-        "name": "MAPD Materials",
-        "slug": "mapd-materials-13",
-        "icon": "folder"
-    },
-    {
-        "id": 14,
-        "name": "File 1",
-        "parentId": 7,
-        "icon": "copy"
-    },
-    {
-        "id": 15,
-        "name": "File 1",
-        "parentId": 2,
-        "icon": "copy"
-    },
-    {
-        "id": 16,
-        "name": "File 2",
-        "parentId": 3,
-        "icon": "copy"
-    },
-    {
-        "id": 17,
-        "name": "Folder A",
-        "slug": "folder-a-17",
-        "parentId": 2,
-        "icon": "folder"
-    },
-    {
-        "id": 18,
-        "name": "Folder B",
-        "slug": "folder-b-18",
-        "parentId": 3,
-        "icon": "folder"
-    }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Demo",
+    "slug": "demo-2",
+    "icon": "folder"
+  }
 ]
